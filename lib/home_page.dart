@@ -13,7 +13,7 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   int selectedIndex = 0;
-  String title = "Dashboard";
+  String title = "board";
   Color? leadingIconColor = Colors.deepPurple[400];
   bool expand = false;
 
@@ -50,7 +50,7 @@ class _HomePageState extends State<HomePage> {
       body: getWidget(selectedIndex),
       tabs: [
         TabItem(
-          title: "Dashboard",
+          title: "board",
           icon: Icons.home_outlined,
           activeIcon: Icons.home_rounded,
         ),
@@ -184,7 +184,7 @@ class _HomePageState extends State<HomePage> {
       selectedIndex = index;
       if (selectedIndex == 0) {
         leadingIconColor = Colors.deepPurple[400];
-        title = "Dashboard";
+        title = "board";
       } else if (selectedIndex == 1) {
         title = "Portfolio";
         leadingIconColor = Colors.yellow;
